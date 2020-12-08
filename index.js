@@ -18,13 +18,13 @@ io.on('connection', (socket) => {
     socket.emit('join', count);
   })
 
-  // When increment event is called on cliend side
+  // When increment event is called on client side
   socket.on('increment', () => {
 
     // Increment the counter
     count += 1;
 
-    // Broadcast it to all connected clients except the one when emitted the event
+    // Broadcast it to all connected clients including the one when emitted the event
     io.emit('increment', count);
   })
 });
