@@ -1,0 +1,17 @@
+.counter {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px;
+  font-family: sans-serif;
+}
